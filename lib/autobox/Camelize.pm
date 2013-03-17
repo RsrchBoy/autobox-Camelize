@@ -1,6 +1,6 @@
 package autobox::Camelize;
 
-# ABSTRACT: The great new autobox::Camelize!
+# ABSTRACT: autobox methods for (de)camelcasing
 
 use strict;
 use warnings;
@@ -44,6 +44,8 @@ sub import {
 !!42;
 __END__
 
+=for :stopwords camelize decamelize Camelize Decamelize Camelizing Decamelizing camelization lowercased
+
 =head1 SYNOPSIS
 
     use autobox::Camelize;
@@ -65,6 +67,16 @@ The first character is capitalized.
 
 Decamelizing replaces '::[A-Z]' with '__[a-z]', and '[A-Z]' with '_[a-z]'.
 The first character is lowercased.
+
+=head1 STRING METHODS
+
+=head2 camelize
+
+Camelize a string.
+
+=head2 decamelize
+
+Decamelize a string.
 
 =head1 SEE ALSO
 

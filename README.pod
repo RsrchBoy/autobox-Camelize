@@ -2,15 +2,16 @@
 
 =encoding utf-8
 
-=for :stopwords Chris Weyl
+=for :stopwords Chris Weyl camelize decamelize Camelize Decamelize Camelizing Decamelizing
+camelization lowercased
 
 =head1 NAME
 
-autobox::Camelize - The great new autobox::Camelize!
+autobox::Camelize - autobox methods for (de)camelcasing
 
 =head1 VERSION
 
-This document describes version 0.001 of autobox::Camelize - released March 16, 2013 as part of autobox-Camelize.
+This document describes version 0.001 of autobox::Camelize - released March 17, 2013 as part of autobox-Camelize.
 
 =head1 SYNOPSIS
 
@@ -34,6 +35,16 @@ The first character is capitalized.
 Decamelizing replaces '::[A-Z]' with '__[a-z]', and '[A-Z]' with '_[a-z]'.
 The first character is lowercased.
 
+=head1 STRING METHODS
+
+=head2 camelize
+
+Camelize a string.
+
+=head2 decamelize
+
+Decamelize a string.
+
 =head1 SEE ALSO
 
 Please see those modules/websites for more information related to this module.
@@ -52,8 +63,17 @@ L<L<autobox::Core> has a fairly comprehensive collection of autobox methods.|L<a
 
 =head1 SOURCE
 
-The development version is on github at L<http://github.com//autobox-Camelize>
-and may be cloned from L<git://github.com//autobox-Camelize.git>
+The development version is on github at L<http://github.com/RsrchBoy/autobox-Camelize>
+and may be cloned from L<git://github.com/RsrchBoy/autobox-Camelize.git>
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/RsrchBoy/autobox-Camelize/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
 
 =head1 AUTHOR
 
