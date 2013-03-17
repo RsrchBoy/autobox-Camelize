@@ -1,4 +1,16 @@
+#
+# This file is part of autobox-Camelize
+#
+# This software is Copyright (c) 2012 by Chris Weyl.
+#
+# This is free software, licensed under:
+#
+#   The GNU Lesser General Public License, Version 2.1, February 1999
+#
 package autobox::Camelize;
+{
+  $autobox::Camelize::VERSION = '0.001';
+}
 
 # ABSTRACT: autobox methods for (de)camelcasing
 
@@ -18,6 +30,9 @@ sub import {
 
 {
     package autobox::Camelize::STRING;
+{
+  $autobox::Camelize::STRING::VERSION = '0.001';
+}
 
     use strict;
     use warnings;
@@ -42,9 +57,23 @@ sub import {
 }
 
 !!42;
+
 __END__
 
-=for :stopwords camelize decamelize Camelize Decamelize Camelizing Decamelizing camelization lowercased
+=pod
+
+=encoding utf-8
+
+=for :stopwords Chris Weyl camelize decamelize Camelize Decamelize Camelizing Decamelizing
+camelization lowercased
+
+=head1 NAME
+
+autobox::Camelize - autobox methods for (de)camelcasing
+
+=head1 VERSION
+
+This document describes version 0.001 of autobox::Camelize - released March 17, 2013 as part of autobox-Camelize.
 
 =head1 SYNOPSIS
 
@@ -80,8 +109,44 @@ Decamelize a string.
 
 =head1 SEE ALSO
 
+Please see those modules/websites for more information related to this module.
+
+=over 4
+
+=item *
+
 L<autobox>
 
-L<autobox::Core> has a fairly comprehensive collection of autobox methods.
+=item *
+
+L<L<autobox::Core> has a fairly comprehensive collection of autobox methods.|L<autobox::Core> has a fairly comprehensive collection of autobox methods.>
+
+=back
+
+=head1 SOURCE
+
+The development version is on github at L<http://github.com/RsrchBoy/autobox-Camelize>
+and may be cloned from L<git://github.com/RsrchBoy/autobox-Camelize.git>
+
+=head1 BUGS
+
+Please report any bugs or feature requests on the bugtracker website
+https://github.com/RsrchBoy/autobox-Camelize/issues
+
+When submitting a bug or request, please include a test-file or a
+patch to an existing test-file that illustrates the bug or desired
+feature.
+
+=head1 AUTHOR
+
+Chris Weyl <cweyl@alumni.drew.edu>
+
+=head1 COPYRIGHT AND LICENSE
+
+This software is Copyright (c) 2012 by Chris Weyl.
+
+This is free software, licensed under:
+
+  The GNU Lesser General Public License, Version 2.1, February 1999
 
 =cut
